@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get '/restaurants', to: 'restaurants#index'
+  get '/restaurants/:id', to: 'restaurants#show', as: :restaurant
   # See all restaurants
   # See details about one restaurant
   # Create a restaurant
