@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/restaurants/:id', to: 'restaurants#show', as: :restaurant
   get '/restaurants/:id/edit', to: 'restaurants#edit', as: :edit_restaurant
   patch '/restaurants/:id', to: 'restaurants#update'
+  delete 'restaurants/:id', to: 'restaurants#destroy'
   # See all restaurants
   # See details about one restaurant
   # Create a restaurant
